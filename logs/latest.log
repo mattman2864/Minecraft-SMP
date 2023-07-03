@@ -1,0 +1,93 @@
+[19:34:14] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[19:34:14] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
+[19:34:16] [ServerMain/INFO]: Loaded 7 recipes
+[19:34:17] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[19:34:17] [Server thread/INFO]: Loading properties
+[19:34:17] [Server thread/INFO]: This server is running Paper version git-Paper-62 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 4356758)
+[19:34:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[19:34:17] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:34:17] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[19:34:17] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[19:34:17] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
+java.io.IOException: The handle is invalid
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
+	at java.io.FileInputStream.read(FileInputStream.java:293) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:311) ~[?:?]
+	at java.io.BufferedInputStream.implRead(BufferedInputStream.java:386) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:365) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:333) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:376) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:219) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:173) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:189) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:161) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:371) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:348) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:437) ~[?:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:180) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:102) ~[paper-1.20.1.jar:git-Paper-62]
+	Suppressed: java.io.IOException: The handle is invalid
+		at java.io.FileDescriptor.close0(Native Method) ~[?:?]
+		at java.io.FileDescriptor.close(FileDescriptor.java:293) ~[?:?]
+		at java.io.FileInputStream$1.close(FileInputStream.java:523) ~[?:?]
+		at java.io.FileDescriptor.closeAll(FileDescriptor.java:351) ~[?:?]
+		at java.io.FileInputStream.close(FileInputStream.java:521) ~[?:?]
+		at java.io.BufferedInputStream.close(BufferedInputStream.java:584) ~[?:?]
+		at sun.nio.cs.StreamDecoder.implClose(StreamDecoder.java:428) ~[?:?]
+		at sun.nio.cs.StreamDecoder.lockedClose(StreamDecoder.java:268) ~[?:?]
+		at sun.nio.cs.StreamDecoder.close(StreamDecoder.java:253) ~[?:?]
+		at java.io.InputStreamReader.close(InputStreamReader.java:204) ~[?:?]
+		at java.io.BufferedReader.implClose(BufferedReader.java:637) ~[?:?]
+		at java.io.BufferedReader.close(BufferedReader.java:622) ~[?:?]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:183) ~[terminalconsoleappender-1.3.0.jar:?]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[terminalconsoleappender-1.3.0.jar:?]
+		at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:102) ~[paper-1.20.1.jar:git-Paper-62]
+[19:34:17] [Server thread/INFO]: Default game type: SURVIVAL
+[19:34:17] [Server thread/INFO]: Generating keypair
+[19:34:17] [Server thread/INFO]: Starting Minecraft server on *:7777
+[19:34:17] [Server thread/INFO]: Using default channel type
+[19:34:17] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[19:34:17] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[19:34:18] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.0.0
+[19:34:18] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.20.1) has not yet been tested! Proceed with caution.
+[19:34:19] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0
+[19:34:19] [Server thread/INFO]: Preparing level "world"
+[19:34:24] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[19:34:24] [Server thread/INFO]: Time elapsed: 103 ms
+[19:34:24] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[19:34:24] [Server thread/INFO]: Time elapsed: 53 ms
+[19:34:24] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[19:34:24] [Server thread/INFO]: Time elapsed: 98 ms
+[19:34:24] [Server thread/INFO]: Running delayed init tasks
+[19:34:24] [Server thread/INFO]: Done (7.308s)! For help, type "help"
+[19:34:24] [Server thread/INFO]: Timings Reset
+[19:34:53] [Server thread/INFO]: Stopping the server
+[19:34:53] [Server thread/INFO]: Stopping server
+[19:34:53] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0
+[19:34:53] [Server thread/INFO]: Saving players
+[19:34:53] [Server thread/INFO]: Saving worlds
+[19:34:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:34:53] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[19:34:53] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[19:34:53] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[19:34:55] [Server thread/INFO]: [ChunkHolderManager] Saved 2025 block chunks, 529 entity chunks, 3 poi chunks in world 'world' in 1.83s
+[19:34:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:34:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[19:34:56] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[19:34:56] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[19:34:56] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[19:34:57] [Server thread/INFO]: [ChunkHolderManager] Saved 2025 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0.95s
+[19:34:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:34:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[19:34:57] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[19:34:57] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[19:34:57] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[19:34:57] [Server thread/INFO]: [ChunkHolderManager] Saved 2025 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.38s
+[19:34:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:34:58] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19:34:58] [Server thread/INFO]: Flushing Chunk IO
+[19:34:58] [Server thread/INFO]: Closing Thread Pool
+[19:34:58] [Server thread/INFO]: Closing Server
