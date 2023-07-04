@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "5ec31a32-4817-4b77-a200-7a5874d0974f",
+    "name": "ratamat",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
