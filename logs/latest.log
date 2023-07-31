@@ -1,187 +1,117 @@
-[20:08:18] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[20:08:19] [ServerMain/WARN]: Found loot table element validation problem in {loot_tables:minecraft:entities/bat}.pools[2].entries[0]: Unknown loot table called minecraft:entities/reference/extra/bat
-[20:08:19] [ServerMain/WARN]: Found loot table element validation problem in {loot_tables:minecraft:entities/ender_dragon}.pools[0].entries[0]: Unknown loot table called minecraft:entities/reference/extra/ender_dragon
-[20:08:19] [ServerMain/INFO]: Loaded 7 recipes
-[20:08:20] [Server thread/INFO]: Starting minecraft server version 1.20.1
-[20:08:20] [Server thread/INFO]: Loading properties
-[20:08:20] [Server thread/INFO]: This server is running Paper version git-Paper-62 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 4356758)
-[20:08:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:08:20] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:08:20] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[11:24:36] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins\Name_Color.jar' failed to load!
+java.lang.RuntimeException: Directory 'plugins\Name_Color.jar' failed to load!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[paper-1.20.1.jar:git-Paper-62]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[paper-1.20.1.jar:git-Paper-62]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[paper-1.20.1.jar:git-Paper-62]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[paper-1.20.1.jar:git-Paper-62]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.20.1.jar:git-Paper-62]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[paper-1.20.1.jar:git-Paper-62]
+	at net.minecraft.server.Main.main(Main.java:126) ~[paper-1.20.1.jar:git-Paper-62]
+	at org.bukkit.craftbukkit.Main.main(Main.java:316) ~[paper-1.20.1.jar:git-Paper-62]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:1623) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidDescriptionException: Restricted name, cannot use 0x20 (space character) in a plugin name.
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.build(SpigotPluginProviderFactory.java:27) ~[paper-1.20.1.jar:git-Paper-62]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.build(SpigotPluginProviderFactory.java:16) ~[paper-1.20.1.jar:git-Paper-62]
+	at io.papermc.paper.plugin.provider.type.PluginFileType.register(PluginFileType.java:71) ~[paper-1.20.1.jar:git-Paper-62]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:57) ~[paper-1.20.1.jar:git-Paper-62]
+	... 20 more
+[11:24:40] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[11:24:42] [ServerMain/WARN]: Found loot table element validation problem in {loot_tables:minecraft:entities/bat}.pools[2].entries[0]: Unknown loot table called minecraft:entities/reference/extra/bat
+[11:24:42] [ServerMain/WARN]: Found loot table element validation problem in {loot_tables:minecraft:entities/ender_dragon}.pools[0].entries[0]: Unknown loot table called minecraft:entities/reference/extra/ender_dragon
+[11:24:42] [ServerMain/INFO]: Loaded 7 recipes
+[11:24:43] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[11:24:43] [Server thread/INFO]: Loading properties
+[11:24:43] [Server thread/INFO]: This server is running Paper version git-Paper-62 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 4356758)
+[11:24:43] [Server thread/INFO]: Using 4 threads for Netty based IO
+[11:24:43] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[11:24:43] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[20:08:20] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
-[20:08:20] [Server thread/INFO]: Default game type: SURVIVAL
-[20:08:20] [Server thread/INFO]: Generating keypair
-[20:08:20] [Server thread/INFO]: Starting Minecraft server on *:7777
-[20:08:20] [Server thread/INFO]: Using default channel type
-[20:08:20] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[20:08:20] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[20:08:21] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.0.0
-[20:08:21] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.20.1) has not yet been tested! Proceed with caution.
-[20:08:22] [Server thread/INFO]: [Orebfuscator] Loading server plugin Orebfuscator v5.4.0
-[20:08:22] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:08:22] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0
-[20:08:22] [Server thread/INFO]: Preparing level "world"
-[20:08:23] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[20:08:23] [Server thread/INFO]: Time elapsed: 282 ms
-[20:08:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[20:08:23] [Server thread/INFO]: Time elapsed: 26 ms
-[20:08:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[20:08:23] [Server thread/INFO]: Time elapsed: 23 ms
-[20:08:23] [Server thread/INFO]: [Orebfuscator] Enabling Orebfuscator v5.4.0
-[20:08:24] [Server thread/INFO]: Running delayed init tasks
-[20:08:24] [Server thread/INFO]: Done (4.105s)! For help, type "help"
-[20:08:24] [Server thread/INFO]: Timings Reset
-[20:09:22] [User Authenticator #0/INFO]: UUID of player ratamat is 5ec31a32-4817-4b77-a200-7a5874d0974f
-[20:09:22] [Server thread/INFO]: ratamat joined the game
-[20:09:22] [Server thread/INFO]: ratamat[/192.168.1.1:62595] logged in with entity id 257 at ([world]8.5, 67.0, 4.5)
-[20:10:16] [Server thread/INFO]: ratamat issued server command: /trigger color set red
-[20:10:20] [Server thread/INFO]: ratamat issued server command: /trigger color set 100
-[20:10:20] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to 100)]
-[20:10:29] [Server thread/INFO]: ratamat issued server command: /trigger color set -13
-[20:10:29] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -13)]
-[20:10:32] [Async Chat Thread - #2/INFO]: <ratamat> hello
-[20:10:44] [Server thread/INFO]: ratamat issued server command: /trigger color
-[20:10:44] [Server thread/INFO]: [ratamat: Triggered [Color]]
-[20:10:47] [Server thread/INFO]: ratamat issued server command: /trigger color set -15
-[20:10:47] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -15)]
-[20:10:50] [Async Chat Thread - #1/INFO]: <ratamat> hello
-[20:11:13] [Server thread/INFO]: ratamat issued server command: /gamemode creative
-[20:11:13] [Server thread/INFO]: [ratamat: Set own game mode to Creative Mode]
-[20:11:20] [Server thread/INFO]: ratamat issued server command: /trigger color
-[20:11:20] [Server thread/INFO]: [ratamat: Triggered [Color]]
-[20:11:25] [Server thread/INFO]: ratamat issued server command: /trigger color set -12
-[20:11:25] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -12)]
-[20:11:30] [Async Chat Thread - #1/INFO]: <ratamat> jfieojf
-[20:11:31] [Async Chat Thread - #1/INFO]: <ratamat> jiafje
-[20:12:09] [Server thread/INFO]: ratamat issued server command: /setworldspawn
-[20:12:09] [Server thread/INFO]: [ratamat: Set the world spawn point to -109, 68, 34 [0.0]]
-[20:12:11] [Server thread/INFO]: ratamat issued server command: /plugins
-[20:12:18] [Server thread/INFO]: ratamat issued server command: /datapack list
-[20:12:22] [Server thread/INFO]: ratamat issued server command: /reload
-[20:12:22] [Server thread/INFO]: ratamat: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
-[20:12:27] [Server thread/INFO]: ratamat issued server command: /reload confirm
-[20:12:27] [Server thread/INFO]: ratamat: Please note that this command is not supported and may cause issues when using some plugins.
-[20:12:27] [Server thread/INFO]: ratamat: If you encounter any issues please use the /stop command to restart your server.
-[20:12:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:12:27] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:12:27] [Server thread/INFO]: [Orebfuscator] Disabling Orebfuscator v5.4.0
-[20:12:31] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0
-[20:12:31] [Server thread/ERROR]: [ProtocolLib] ╔══════════════════════════════════════════════════════════════════╗
-[20:12:31] [Server thread/ERROR]: [ProtocolLib] ║                               WARNING                            ║
-[20:12:31] [Server thread/ERROR]: [ProtocolLib] ║     RELOADING THE SERVER WHILE PROTOCOL LIB IS ENABLED MIGHT     ║
-[20:12:31] [Server thread/ERROR]: [ProtocolLib] ║                    LEAD TO UNEXPECTED ERRORS!                    ║
-[20:12:31] [Server thread/ERROR]: [ProtocolLib] ║                                                                  ║
-[20:12:31] [Server thread/ERROR]: [ProtocolLib] ║     Consider to cleanly restart your server if you encounter     ║
-[20:12:31] [Server thread/ERROR]: [ProtocolLib] ║    any issues related to Protocol Lib before opening an issue    ║
-[20:12:31] [Server thread/ERROR]: [ProtocolLib] ║                            on GitHub!                            ║
-[20:12:31] [Server thread/ERROR]: [ProtocolLib] ╚══════════════════════════════════════════════════════════════════╝
-[20:12:31] [Server thread/WARN]: Found loot table element validation problem in {loot_tables:minecraft:entities/bat}.pools[2].entries[0]: Unknown loot table called minecraft:entities/reference/extra/bat
-[20:12:31] [Server thread/WARN]: Found loot table element validation problem in {loot_tables:minecraft:entities/ender_dragon}.pools[0].entries[0]: Unknown loot table called minecraft:entities/reference/extra/ender_dragon
-[20:12:31] [Server thread/INFO]: Loaded 7 recipes
-[20:12:32] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.0.0
-[20:12:32] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.20.1) has not yet been tested! Proceed with caution.
-[20:12:33] [Server thread/INFO]: [Orebfuscator] Loading server plugin Orebfuscator v5.4.0
-[20:12:33] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:12:33] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0
-[20:12:33] [Server thread/INFO]: [Orebfuscator] Enabling Orebfuscator v5.4.0
-[20:12:33] [Server thread/INFO]: ratamat: Reload complete.
-[20:12:33] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5894ms or 117 ticks behind
-[20:12:33] [Server thread/INFO]: Timings Reset
-[20:13:04] [Async Chat Thread - #2/INFO]: <ratamat> hello
-[20:13:08] [Server thread/INFO]: ratamat issued server command: /trigger color
-[20:13:08] [Server thread/INFO]: [ratamat: Triggered [Color]]
-[20:13:10] [Server thread/INFO]: ratamat issued server command: /trigger color set -15
-[20:13:10] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -15)]
-[20:13:12] [Server thread/INFO]: ratamat issued server command: /trigger color set -16
-[20:13:12] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -16)]
-[20:13:13] [Server thread/INFO]: ratamat issued server command: /trigger color set -4
-[20:13:13] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -4)]
-[20:13:14] [Server thread/INFO]: ratamat issued server command: /trigger color set -8
-[20:13:14] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -8)]
-[20:13:17] [Server thread/INFO]: ratamat issued server command: /trigger color set -6
-[20:13:17] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -6)]
-[20:13:19] [Server thread/INFO]: ratamat issued server command: /trigger color set -8
-[20:13:19] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -8)]
-[20:15:10] [Async Chat Thread - #4/INFO]: <ratamat> jeif
-[20:16:58] [Server thread/INFO]: ratamat issued server command: /trigger color set -8
-[20:16:58] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -8)]
-[20:16:59] [Async Chat Thread - #6/INFO]: <ratamat> ajfio3e
-[20:17:01] [Async Chat Thread - #6/INFO]: <ratamat> ioajfoej
-[20:17:07] [Server thread/INFO]: ratamat issued server command: /trigger color add 1
-[20:17:07] [Server thread/INFO]: [ratamat: Triggered [Color] (added 1 to value)]
-[20:17:11] [Server thread/INFO]: ratamat issued server command: /trigger color set -4
-[20:17:11] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -4)]
-[20:17:12] [Server thread/INFO]: ratamat issued server command: /trigger color set -8
-[20:17:12] [Server thread/INFO]: [ratamat: Triggered [Color] (set value to -8)]
-[20:17:18] [Async Chat Thread - #5/INFO]: <ratamat> hello
-[20:17:21] [Async Chat Thread - #6/INFO]: <ratamat> hello
-[20:17:23] [Async Chat Thread - #6/INFO]: <ratamat> afe
-[20:17:31] [Async Chat Thread - #6/INFO]: <ratamat> feji
-[20:17:32] [Async Chat Thread - #5/INFO]: <ratamat> afjioe
-[20:17:35] [Async Chat Thread - #6/INFO]: <ratamat> eof
-[20:19:27] [Server thread/INFO]: ratamat issued server command: /trigger color set red
-[20:20:26] [Server thread/INFO]: ratamat issued server command: /team add admin
-[20:20:26] [Server thread/INFO]: [ratamat: Created team [admin]]
-[20:20:40] [Server thread/INFO]: ratamat issued server command: /team modify admin color gold
-[20:20:40] [Server thread/INFO]: [ratamat: Updated the color for team [admin] to gold]
-[20:20:44] [Server thread/INFO]: ratamat issued server command: /team join admin
-[20:20:44] [Server thread/INFO]: [ratamat: Added ratamat to team [admin]]
-[20:20:46] [Async Chat Thread - #7/INFO]: <ratamat> ahefuih
-[20:20:54] [Server thread/INFO]: ratamat issued server command: /team list
-[20:21:28] [Server thread/INFO]: ratamat issued server command: /scoreboard objectives add main
-[20:21:48] [Server thread/INFO]: ratamat issued server command: /scoreboard objectives add belowname level
-[20:21:48] [Server thread/INFO]: [ratamat: Created new objective [belowname]]
-[20:22:04] [Server thread/INFO]: ratamat issued server command: /scoreboard objectives setdisplay belowName belowname
-[20:22:04] [Server thread/INFO]: [ratamat: Set display slot belowName to show objective belowname]
-[20:22:33] [Server thread/INFO]: ratamat issued server command: /scoreboard objectives remove belowname
-[20:22:33] [Server thread/INFO]: [ratamat: Removed objective [belowname]]
-[20:22:46] [Server thread/INFO]: ratamat issued server command: /scoreboard objectives add XP xp
-[20:22:46] [Server thread/INFO]: [ratamat: Created new objective [XP]]
-[20:23:01] [Server thread/INFO]: ratamat issued server command: /scoreboard objectives setdisplay belowName XP
-[20:23:01] [Server thread/INFO]: [ratamat: Set display slot belowName to show objective XP]
-[20:23:17] [Server thread/INFO]: ratamat issued server command: /xp add 100000
-[20:23:22] [Server thread/INFO]: ratamat issued server command: /xp add @s 10000
-[20:23:22] [Server thread/INFO]: [ratamat: Gave 10000 experience points to ratamat]
-[20:23:32] [Server thread/INFO]: ratamat issued server command: /xp set @s 0
-[20:23:32] [Server thread/INFO]: [ratamat: Set 0 experience points on ratamat]
-[20:23:40] [Server thread/INFO]: ratamat issued server command: /kill
-[20:23:40] [Server thread/INFO]: ratamat was killed
-[20:23:40] [Server thread/INFO]: [ratamat: Killed ratamat]
-[20:25:33] [Server thread/INFO]: ratamat issued server command: /scoreboard objectives add Deaths deathCount
-[20:25:33] [Server thread/INFO]: [ratamat: Created new objective [Deaths]]
-[20:25:50] [Server thread/INFO]: ratamat issued server command: /scoreboard objectives setdisplay list Deaths
-[20:25:50] [Server thread/INFO]: [ratamat: Set display slot list to show objective Deaths]
-[20:26:13] [Server thread/INFO]: ratamat issued server command: /gamemode survival
-[20:26:13] [Server thread/INFO]: [ratamat: Set own game mode to Survival Mode]
-[20:26:28] [Server thread/INFO]: ratamat lost connection: Disconnected
-[20:26:28] [Server thread/INFO]: ratamat left the game
-[20:27:04] [Server thread/INFO]: Stopping the server
-[20:27:04] [Server thread/INFO]: Stopping server
-[20:27:04] [Server thread/INFO]: [Orebfuscator] Disabling Orebfuscator v5.4.0
-[20:27:05] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0
-[20:27:05] [Server thread/INFO]: Saving players
-[20:27:05] [Server thread/INFO]: Saving worlds
-[20:27:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[20:27:05] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[20:27:05] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[20:27:05] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[20:27:07] [Server thread/INFO]: [ChunkHolderManager] Saved 834 block chunks, 318 entity chunks, 0 poi chunks in world 'world' in 1.51s
-[20:27:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[20:27:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[20:27:08] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[20:27:08] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[20:27:08] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[20:27:08] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 32 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
-[20:27:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[20:27:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[20:27:09] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[20:27:09] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[20:27:09] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[20:27:09] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
-[20:27:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[20:27:09] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[20:27:09] [Server thread/INFO]: Flushing Chunk IO
-[20:27:09] [Server thread/INFO]: Closing Thread Pool
-[20:27:09] [Server thread/INFO]: Closing Server
+[11:24:43] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[11:24:43] [Server thread/INFO]: Default game type: SURVIVAL
+[11:24:43] [Server thread/INFO]: Generating keypair
+[11:24:43] [Server thread/INFO]: Starting Minecraft server on *:7777
+[11:24:43] [Server thread/INFO]: Using default channel type
+[11:24:43] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[11:24:43] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[11:24:44] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R1.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[11:24:47] [Server thread/WARN]: Legacy plugin Invsee v1.0.0 does not specify an api-version.
+[11:24:47] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.0.0
+[11:24:47] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.20.1) has not yet been tested! Proceed with caution.
+[11:24:49] [Server thread/INFO]: [Orebfuscator] Loading server plugin Orebfuscator v5.4.0
+[11:24:49] [Server thread/INFO]: [Invsee] Loading server plugin Invsee v1.0.0
+[11:24:49] [Server thread/INFO]: [HexNicks] Loading server plugin HexNicks v2.2.2
+[11:24:49] [Server thread/INFO]: [ExtremeFlight] Loading server plugin ExtremeFlight v1.0-SNAPSHOT
+[11:24:49] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[11:24:49] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0
+[11:24:49] [Server thread/INFO]: Preparing level "world"
+[11:24:49] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[11:24:51] [Server thread/INFO]: Time elapsed: 1262 ms
+[11:24:51] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[11:24:51] [Server thread/INFO]: Time elapsed: 22 ms
+[11:24:51] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[11:24:51] [Server thread/INFO]: Time elapsed: 20 ms
+[11:24:51] [Server thread/INFO]: [Orebfuscator] Enabling Orebfuscator v5.4.0
+[11:24:51] [Server thread/INFO]: [Invsee] Enabling Invsee v1.0.0*
+[11:24:51] [Server thread/INFO]: [HexNicks] Enabling HexNicks v2.2.2
+[11:24:51] [Server thread/INFO]: [HexNicks] Running on PaperMC server software.
+[11:24:51] [Server thread/INFO]: [HexNicks] Successfully loaded nicknames from Json storage.
+[11:24:51] [Server thread/INFO]: [ExtremeFlight] Enabling ExtremeFlight v1.0-SNAPSHOT
+[11:24:51] [Server thread/INFO]: [ExtremeFlight] Hello World!
+[11:24:51] [Server thread/INFO]: Running delayed init tasks
+[11:24:51] [Server thread/INFO]: Done (8.637s)! For help, type "help"
+[11:24:51] [Server thread/INFO]: Timings Reset
+[11:24:51] [Craft Scheduler Thread - 3 - Orebfuscator/INFO]: [Orebfuscator] CacheFileCleanupTask successfully deleted 6 cache file(s)
+[11:25:22] [User Authenticator #0/INFO]: UUID of player ratamat is 5ec31a32-4817-4b77-a200-7a5874d0974f
+[11:25:22] [Server thread/INFO]: ratamat joined the game
+[11:25:22] [Server thread/INFO]: ratamat[/192.168.1.132:52822] logged in with entity id 216 at ([world]-1665.2426149662379, 74.0, -1928.7833652823751)
+[11:43:35] [Server thread/INFO]: ratamat lost connection: Disconnected
+[11:43:35] [Server thread/INFO]: ratamat left the game
+[13:01:44] [User Authenticator #1/INFO]: UUID of player ratamat is 5ec31a32-4817-4b77-a200-7a5874d0974f
+[13:01:44] [Server thread/INFO]: ratamat joined the game
+[13:01:44] [Server thread/INFO]: ratamat[/192.168.1.132:54052] logged in with entity id 6476 at ([world]-1605.3374474607663, 71.0, -1882.421673943427)
+[13:36:05] [Server thread/INFO]: ratamat lost connection: Disconnected
+[13:36:05] [Server thread/INFO]: ratamat left the game
+[13:39:26] [Server thread/INFO]: Stopping the server
+[13:39:26] [Server thread/INFO]: Stopping server
+[13:39:26] [Server thread/INFO]: [ExtremeFlight] Disabling ExtremeFlight v1.0-SNAPSHOT
+[13:39:26] [Server thread/INFO]: [HexNicks] Disabling HexNicks v2.2.2
+[13:39:26] [Server thread/INFO]: [Invsee] Disabling Invsee v1.0.0
+[13:39:26] [Server thread/INFO]: [Orebfuscator] Disabling Orebfuscator v5.4.0
+[13:39:27] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0
+[13:39:27] [Server thread/INFO]: Saving players
+[13:39:27] [Server thread/INFO]: Saving worlds
+[13:39:27] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 50 entity chunks, 0 poi chunks in world 'world' in 0.01s
+[13:39:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[13:39:27] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Saved 1 block chunks, 55 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[13:39:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:39:27] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[13:39:27] [Server thread/INFO]: [ChunkHolderManager] Saved 1 block chunks, 36 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[13:39:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:39:28] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[13:39:28] [Server thread/INFO]: Flushing Chunk IO
+[13:39:28] [Server thread/INFO]: Closing Thread Pool
+[13:39:28] [Server thread/INFO]: Closing Server

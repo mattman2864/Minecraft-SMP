@@ -1,0 +1,3 @@
+prefix: '&8[&4&lInv&6See&8] &7'
+notOnline: '&cThe player %player% is not online.'
+noPermission: '&cYou are lacking the permission&8: &6%permission%'
